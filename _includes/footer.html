@@ -1,5 +1,8 @@
 <footer class="center">
   <div class="measure">
+      {% if site.show_post_footers %}
+        {% include post_footer.html %}
+      {% endif %}
       {% if site.show_social_icons %}
         {% include social_links.html %}
       {% endif %}
