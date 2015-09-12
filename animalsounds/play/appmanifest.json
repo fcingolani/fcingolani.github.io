@@ -1,6 +1,6 @@
 ﻿{
-	"name": "Animal Sounds Match and Learn",
-	"short_name": "Animal Sounds Match and Learn",
+	"name": "Animal Sounds",
+	"short_name": "Animal Sounds",
 	"start_url": "index.html",
 	"display": "fullscreen",
 	"orientation": "landscape",

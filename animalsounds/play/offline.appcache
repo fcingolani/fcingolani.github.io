@@ -1,5 +1,5 @@
 ﻿CACHE MANIFEST
-#1441947083
+#1442018787
 data.js
 c2runtime.js
 jquery-2.1.1.min.js
@@ -11,7 +11,8 @@ images/background-sheet0.png
 images/animalname.png
 images/maintitle-sheet0.png
 images/playbutton-sheet0.png
-images/sprite-sheet0.png
+images/optionsbutton-sheet0.png
+images/loadingbar.png
 media/animal-7.m4a
 media/animal-7.ogg
 media/animal-0.m4a
