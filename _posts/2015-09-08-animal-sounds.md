@@ -6,7 +6,7 @@ summary:    Tap the animals to hear their sounds and read their names.
 categories:
   - games
   - animal sounds
-permalink: animalsounds
+permalink: animal-sounds
 banner: assets/animalsounds-banner.png
 tech:
   - Construct2
@@ -17,7 +17,7 @@ tech:
 ---
 
 | Android | Web |
-| [![Get it on Google Play]({{ site.url }}assets/get-it-on-google-play.png)](https://play.google.com/store/apps/details?id=ar.com.fcingolani.animalsounds) | [![Play it Online](http://www.w3.org/html/logo/badge/html5-badge-h-graphics-multimedia.png)](http://fcingolani.com.ar/animalsounds/play/) |
+| [![Get it on Google Play]({{ site.url }}assets/get-it-on-google-play.png)](https://play.google.com/store/apps/details?id=ar.com.fcingolani.animalsounds) | [![Play it Online](http://www.w3.org/html/logo/badge/html5-badge-h-graphics-multimedia.png)](http://fcingolani.com.ar/animal-sounds/play/) |
 
 ## About
 

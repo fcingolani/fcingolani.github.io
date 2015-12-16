@@ -6,7 +6,7 @@ summary:    Gather as many mint leaves as you can before all the plants die.
 categories:
   - games
   - peppermint rush
-permalink: peppermintrush
+permalink: peppermint-rush
 banner: assets/peppermintrush-banner.png
 tech:
   - JavaScript

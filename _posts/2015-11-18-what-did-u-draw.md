@@ -6,7 +6,7 @@ summary:    Frames from the Where Are Ü Now video by Skrillex and Diplo with Ju
 categories:
   - websites
   - what did u draw
-permalink: whatdidudraw
+permalink: what-did-u-draw
 banner: assets/whatdidudraw-banner.png
 tech:
   - Node

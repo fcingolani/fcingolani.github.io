@@ -7,7 +7,7 @@ categories:
   - twitter
   - bots
   - hearthstone
-permalink: knowhearthstone
+permalink: know-hearthstone
 banner: assets/knowhearthstone-banner.png
 tech:
   - Ruby
