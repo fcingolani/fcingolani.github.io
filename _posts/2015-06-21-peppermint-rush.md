@@ -8,6 +8,12 @@ categories:
   - peppermint rush
 permalink: peppermintrush
 banner: assets/peppermintrush-banner.png
+tech:
+  - JavaScript
+  - Phaser
+  - Apache Cordova
+  - Android
+  - Web
 ---
 
 | Android | Web |

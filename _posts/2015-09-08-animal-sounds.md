@@ -8,6 +8,12 @@ categories:
   - animal sounds
 permalink: animalsounds
 banner: assets/animalsounds-banner.png
+tech:
+  - Construct2
+  - IntelXDK
+  - Crosswalk
+  - Android
+  - Web
 ---
 
 | Android | Web |

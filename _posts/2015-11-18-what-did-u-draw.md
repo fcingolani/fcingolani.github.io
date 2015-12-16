@@ -8,6 +8,10 @@ categories:
   - what did u draw
 permalink: whatdidudraw
 banner: assets/whatdidudraw-banner.png
+tech:
+  - Node
+  - CoffeeScript
+  - Web
 ---
 
 [http://whatdidudraw.tumblr.com](http://whatdidudraw.tumblr.com)
