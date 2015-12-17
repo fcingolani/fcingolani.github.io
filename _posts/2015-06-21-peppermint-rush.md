@@ -5,7 +5,7 @@ title:      Peppermint Rush
 summary:    Gather as many mint leaves as you can before all the plants die.
 categories:
   - games
-  - peppermint rush
+  - projects
 permalink: peppermint-rush
 banner: assets/peppermintrush-banner.png
 tech:

@@ -4,6 +4,10 @@ layout: default
 
 <div class="home">
 
+  {% include post_footer.html %}
+
+  {% comment %}
+
   <div class="posts">
     {% for post in paginator.posts %}
       <div class="post py3">
@@ -23,4 +27,25 @@ layout: default
   </div>
 
   {% include pagination.html %}
+
+  {% endcomment %}
+
+
+  <h2>Projects</h2>
+
+  <div class="container">
+    <div class="clearfix">
+      {% for post in site.categories.projects %}
+        <a class="sm-col sm-col-6" href="{{ post.permalink }}">
+          <div class="p1">
+            {% if post.banner %}
+              <img src="{{ site.url }}{{ post.banner }}" class="mb2"/>
+            {% endif %}
+            <h1 class="h2 mt0">{{post.title}}</h1>
+            <p class="mb0">{{post.summary}}</p>
+          </div>
+        </a>
+      {% endfor %}
+    </div>
+  </div>
 </div>

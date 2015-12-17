@@ -4,9 +4,8 @@ lang:       en
 title:      Know Hearthstone
 summary:    A Twitter bot that tweets one Hearthstone card a day.
 categories:
-  - twitter
   - bots
-  - hearthstone
+  - projects
 permalink: know-hearthstone
 banner: assets/knowhearthstone-banner.png
 tech:

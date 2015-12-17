@@ -5,7 +5,7 @@ title:      Animal Sounds
 summary:    Tap the animals to hear their sounds and read their names.
 categories:
   - games
-  - animal sounds
+  - projects
 permalink: animal-sounds
 banner: assets/animalsounds-banner.png
 tech:

@@ -5,7 +5,7 @@ title:      What did Ü draw
 summary:    Frames from the Where Are Ü Now video by Skrillex and Diplo with Justin Bieber.
 categories:
   - websites
-  - what did u draw
+  - projects
 permalink: what-did-u-draw
 banner: assets/whatdidudraw-banner.png
 tech:
