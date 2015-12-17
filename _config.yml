@@ -8,8 +8,8 @@ url:         "/"
 date_format: "%b %-d, %Y"
 
 # Google services
-google_analytics:
-google_verification:
+google_analytics: "UA-22786605-1"
+google_verification: "_4XkIxWc6MVP6kpY4msQDA-JmOw-6yKbRMEUCO3jOZE"
 
 # Optional features
 animated:             true
