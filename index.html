@@ -30,8 +30,8 @@ layout: default
 
   {% endcomment %}
 
-
-  <h2>Projects</h2>
+  
+  <h2><a name="projects">Projects</a></h2>
 
   <div class="container">
     <div class="clearfix">
@@ -49,7 +49,7 @@ layout: default
     </div>
   </div>
 
-  <h2>Code</h2>
+  <h2><a name="code">Code</a></h2>
   <div class="container">
       {% for github_repo in site.github_repos %}
         {% assign loopindex = forloop.index | modulo: 2 %}
