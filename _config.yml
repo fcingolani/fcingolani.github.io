@@ -57,3 +57,15 @@ permalink:    pretty
 paginate:     4
 sass:
   compressed: true
+
+github_repos:
+- cammesa-api
+- prisma-dump
+- video-metadata-api
+- hubot-game-idea
+- wordpress-juxtapose
+- cimarron
+- jw6ss
+- Slugify
+- node-ifttt
+- ruby-mpris2
