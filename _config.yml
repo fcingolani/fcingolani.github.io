@@ -59,6 +59,7 @@ sass:
   compressed: true
 
 github_repos:
+- guitoji
 - cammesa-api
 - prisma-dump
 - video-metadata-api
