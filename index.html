@@ -36,15 +36,14 @@ layout: default
   <div class="container">
     <div class="clearfix">
       {% for post in site.categories.projects %}
-        <a class="sm-col sm-col-6" href="{{ post.permalink }}">
-          <div class="p1">
-            {% if post.banner %}
-              <img src="{{ site.url }}{{ post.banner }}" class="mb2"/>
-            {% endif %}
-            <h1 class="h2 mt0">{{post.title}}</h1>
-            <p class="mb0">{{post.summary}}</p>
+        {% assign loopindex = forloop.index | modulo: 2 %}
+        {% if loopindex == 1 %}
+          <div class="clearfix">
+            {% include project_card.html %}
+        {% else %}
+            {% include project_card.html %}
           </div>
-        </a>
+        {% endif %}
       {% endfor %}
     </div>
   </div>
@@ -55,9 +54,9 @@ layout: default
         {% assign loopindex = forloop.index | modulo: 2 %}
         {% if loopindex == 1 %}
           <div class="clearfix">
-            <div class="sm-col sm-col-6 p1 github-widget" data-repo="fcingolani/{{github_repo}}"></div>
+            <div class="sm-col sm-col-6 p2 github-widget" data-repo="fcingolani/{{github_repo}}"></div>
         {% else %}
-            <div class="sm-col sm-col-6 p1 github-widget" data-repo="fcingolani/{{github_repo}}"></div>
+            <div class="sm-col sm-col-6 p2 github-widget" data-repo="fcingolani/{{github_repo}}"></div>
           </div>
         {% endif %}
       {% endfor %}
