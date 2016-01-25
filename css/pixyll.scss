@@ -12,6 +12,8 @@
 
 @import 'variables';
 
+$link-color: $dark-green;
+
 @import 'basscss';
 
 @import 'base';
@@ -34,3 +36,7 @@
 @import 'gists';
 @import 'measure';
 @import 'pagination';
+
+.ci {
+    color: #333;
+}
