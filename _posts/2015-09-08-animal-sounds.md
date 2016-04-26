@@ -17,7 +17,7 @@ tech:
 ---
 
 | Android | Web |
-| [![Get it on Google Play]({{ site.url }}assets/get-it-on-google-play.png)](https://play.google.com/store/apps/details?id=ar.com.fcingolani.animalsounds) | [![Play it Online](http://www.w3.org/html/logo/badge/html5-badge-h-graphics-multimedia.png)](http://fcingolani.com.ar/animal-sounds/play/) |
+| [![Get it on Google Play]({{ site.url }}assets/get-it-on-google-play.png)](https://play.google.com/store/apps/details?id=ar.com.fcingolani.animalsounds) | [![Play it Online](http://www.w3.org/html/logo/badge/html5-badge-h-graphics-multimedia.png)](http://fcingolani.com.ar/static/animal-sounds/play/) |
 
 ## About
 
