@@ -48,18 +48,4 @@ layout: default
     </div>
   </div>
 
-  <h2><a name="code" class="ci">Code</a></h2>
-  <div class="container">
-      {% for github_repo in site.github_repos %}
-        {% assign loopindex = forloop.index | modulo: 2 %}
-        {% if loopindex == 1 %}
-          <div class="clearfix">
-            <div class="sm-col sm-col-6 p2 github-widget" data-repo="fcingolani/{{github_repo}}"></div>
-        {% else %}
-            <div class="sm-col sm-col-6 p2 github-widget" data-repo="fcingolani/{{github_repo}}"></div>
-          </div>
-        {% endif %}
-      {% endfor %}
-    </div>
-  </div>
 </div>
