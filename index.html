@@ -6,46 +6,87 @@ layout: default
 
   {% include post_footer.html %}
 
+
+  <h2>Personal Projects</h2>
+
+  <p>
+    I've made...
+    <ul>
+      <li>A webapp that creates a
+        <a href="http://fcingolani.com.ar/sabin/">personalized vaccination calendar given a birth date</a>, and allows you to import it to your Google Calendar.</li>
+      <li>A videogame about
+        <a href="https://fcingolani.itch.io/ridiculous-poying">shooting a baked chicken</a>.</li>
+      <li>An
+        <a href="https://fcingolani.github.io/guitoji">argentinian banknotes calculator</a> using emojis.</li>
+      <li>A Twitter bot that tweets random
+        <a href="https://twitter.com/KnowHearthstone">Hearthstone cards</a> every 6 hours.</li>
+      <li>An Android game for kids where you tap
+        <a href="https://play.google.com/store/apps/details?id=ar.com.fcingolani.animalsounds">animal faces to hear their sounds</a>. You can play it
+        <a href="/static/animal-sounds/play/">on your browser</a> too.</li>
+      <li>A twitchy Android videogame where you gather
+        <a href="https://play.google.com/store/apps/details?id=ar.com.fcingolani.peppermintrush">as many mint leaves as you can</a> before all the plants die. It's available on
+        <a href="https://fcingolani.itch.io/peppermint-rush">Itch</a> too.</li>
+      <li>An automated process to upload
+        <a href="http://whatdidudraw.tumblr.com/">2300 snapshots from a Justin Bieber's music video</a> using the Tumblr API.</li>
+      <li>A (now defunct) website that indexed
+        <a href="/edicta">court decrees</a> and a
+        <a href="https://twitter.com/edicta_ar">Twitter bot</a> that posted them.</li>
+      <li>A file processor to
+        <a href="https://github.com/fcingolani/jimenez">generate configuration files</a> for different environments based on templates.</li>
+      <li>An API and a website to track
+        <a href="https://github.com/fcingolani/sinluz">Buenos Aires' blackouts over time</a>. (In progress)</li>
+      <li>A prototype webapp that allows you to
+        <a href="http://fcingolani.com.ar/precioscaros/">scan a product's barcode and compare its prices near you</a>.</li>
+      <li>A bot that collects BuzzFeed's listicles, renders them in a
+        <em>poem</em> fashion, and
+        <a href="https://twitter.com/buzzlistpoems?lang=es">posts them to twitter</a>.</li>
+      <li>An API that provides information about power demand, load and temperature of
+        <a href="https://github.com/fcingolani/cammesa-api#api-rest">Argentina's electrical power infrastructure</a>.</li>
+      <li>A game-agnostic
+        <a href="https://github.com/fcingolani/memento">high-score</a> server. It can also save replay (or other binary) data. </li>
+      <li>A simple HTTP API to obtain
+        <a href="https://github.com/fcingolani/video-metadata-api">remote video metadata</a> (codecs, duration, formats, etc) using ffprobe as a backend.</li>
+      <li>A .Net library to generate
+        <a href="https://www.nuget.org/packages/Slugify/">URL slugs</a>.</li>
+      <li>A simple webserver that allows you to
+        <a href="https://github.com/fcingolani/chronobrake">test HTTP clients timeouts</a> by pausing the response for the time you specify.</li>
+      <li>A web canvas where you can
+        <a href="http://fcingolani.com.ar/dibus/">draw with your mouse/stencil/finger</a> and save the result as a PNG.</li>
+      <li>A
+        <a href="https://github.com/fcingolani/cimarron">zero configuration (but configurable!) web server</a>, ideal for developing and testing static sites.</li>
+      <li>Two Hubot scripts that allow you to
+        <a href="https://github.com/fcingolani/hubot-shy">send anonymous messages</a> and get
+        <a href="https://github.com/fcingolani/hubot-game-idea">random game ideas</a>.</li>
+      <li>A WordPress plugin that adds a [juxtapose] shortcode to embed Northwestern University Knight Lab's
+        <a href="https://github.com/fcingolani/wordpress-juxtapose">JuxtaposeJS image comparisons</a>.</li>
+      <li>A middleware so you can use
+        <a href="https://github.com/fcingolani/node-ifttt/">your NodeJS server to receive IFTTT actions</a>.</li>
+      <li>A Ruby gem to
+        <a href="https://github.com/fcingolani/ruby-mpris2">control media players</a> using the D-Bus Media Player Remote Interfacing Specification (MPRIS).</li>
+      <li>The design and a big chunk of the codebase of
+        <a href="https://venganzasdelpasado.com.ar/">Venganzas del Pasado</a>.</li>
+    </ul>
+    ... plus some other stuff I haven't published.
+  </p>
+
   {% comment %}
 
   <div class="posts">
     {% for post in paginator.posts %}
-      <div class="post py3">
-        {% if post.layout != "page" %}
-          <p class="post-meta">{{ post.date | date: site.date_format }}</p>
-        {% endif %}
-        <a href="{{ post.url | prepend: site.baseurl }}" class="post-link"><h3 class="h1 post-title">{{ post.title }}</h3></a>
-        <p class="post-summary">
-          {% if post.summary %}
-            {{ post.summary }}
-          {% else %}
-            {{ post.excerpt }}
-          {% endif %}
-        </p>
-      </div>
+    <div class="post py3">
+      {% if post.layout != "page" %}
+      <p class="post-meta">{{ post.date | date: site.date_format }}</p>
+      {% endif %}
+      <a href="{{ post.url | prepend: site.baseurl }}" class="post-link">
+        <h3 class="h1 post-title">{{ post.title }}</h3>
+      </a>
+      <p class="post-summary">
+        {% if post.summary %} {{ post.summary }} {% else %} {{ post.excerpt }} {% endif %}
+      </p>
+    </div>
     {% endfor %}
   </div>
 
-  {% include pagination.html %}
-
-  {% endcomment %}
-
-
-  <h2><a name="projects" class="ci">Projects</a></h2>
-
-  <div class="container">
-    <div class="clearfix">
-      {% for post in site.categories.projects %}
-        {% assign loopindex = forloop.index | modulo: 2 %}
-        {% if loopindex == 1 %}
-          <div class="clearfix">
-            {% include project_card.html %}
-        {% else %}
-            {% include project_card.html %}
-          </div>
-        {% endif %}
-      {% endfor %}
-    </div>
-  </div>
+  {% include pagination.html %} {% endcomment %}
 
 </div>

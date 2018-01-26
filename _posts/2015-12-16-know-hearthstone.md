@@ -7,7 +7,7 @@ categories:
   - bots
   - projects
 permalink: know-hearthstone
-banner: assets/knowhearthstone-banner.png
+banner: /assets/knowhearthstone-banner.png
 tech:
   - Ruby
   - SQLite

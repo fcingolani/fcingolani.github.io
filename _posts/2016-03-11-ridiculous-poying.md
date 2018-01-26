@@ -7,7 +7,7 @@ categories:
   - games
   - projects
 permalink: ridiculous-poying
-banner: assets/ridiculouspoying-banner.png
+banner: /assets/ridiculouspoying-banner.png
 tech:
   - Construct 2
   - Web

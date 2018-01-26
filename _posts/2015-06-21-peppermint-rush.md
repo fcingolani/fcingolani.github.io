@@ -7,7 +7,7 @@ categories:
   - games
   - projects
 permalink: peppermint-rush
-banner: assets/peppermintrush-banner.png
+banner: /assets/peppermintrush-banner.png
 tech:
   - JavaScript
   - Phaser

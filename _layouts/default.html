@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html>
+
 {% include head.html %}
+
 <body class="site{% if site.animated %} animated fade-in-down{% endif %}">
   <div class="site-wrap">
+
     {% include header.html %}
 
     <div class="post p2 p-responsive wrap" role="main">
@@ -10,11 +13,10 @@
         {{ content }}
       </div>
     </div>
+
   </div>
 
   {% include footer.html %}
 
-  <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
-  <script src="/js/jquery.githubRepoWidget.js"></script>
 </body>
 </html>

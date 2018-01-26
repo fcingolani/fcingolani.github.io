@@ -7,7 +7,7 @@ categories:
   - games
   - projects
 permalink: animal-sounds
-banner: assets/animalsounds-banner.png
+banner: /assets/animalsounds-banner.png
 tech:
   - Construct2
   - IntelXDK
