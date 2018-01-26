@@ -41,9 +41,23 @@ $link-color: $dark-green;
     color: #333;
 }
 
+.site-header {
+    background: $dark-green;
+
+    p, site-title, a, a:visited {
+        color: white;
+    }
+
+    .site-nav {
+        margin-top: 0;
+        margin-bottom: 1rem;
+    }
+}
+
 .post-footer {
 
     margin-top: 0px;
+    margin-bottom: 0px;
 
     .avatar {
         margin: 0 0 2rem 0;

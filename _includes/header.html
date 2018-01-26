@@ -1,13 +1,22 @@
 <header class="site-header px2 px-responsive">
   <div class="mt2 wrap">
     <div class="measure">
-      <a href="{{ site.url }}" class="site-title">{{ site.title }}</a>
+      <p>
+          <a href="{{ site.url }}" class="site-title">{{ site.title }}</a>
+      </p>
+
+      {% if page.path == 'index.html' %}
+        {% if site.show_post_footers %}
+          {% include about.html %}
+        {% endif %}
+      {% endif %}
+
       <nav class="site-nav">
-        <a href="https://ar.linkedin.com/in/fcingolani" target="_blank">Linkedin</a>
-        <a href="https://github.com/fcingolani" target="_blank">Github</a>
-        <a href="https://twitter.com/fcingolani" target="_blank">Twitter</a>
-      </nav>
-      <div class="clearfix"></div>
+          <a href="https://ar.linkedin.com/in/fcingolani" target="_blank">Linkedin</a>
+          <a href="https://github.com/fcingolani" target="_blank">Github</a>
+          <a href="https://twitter.com/fcingolani" target="_blank">Twitter</a>
+        </nav>
+        <div class="clearfix"></div>
     </div>
   </div>
 </header>
