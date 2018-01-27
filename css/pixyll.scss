@@ -15,6 +15,7 @@
 $base-font-size: 18px;
 $primary-color: darken($dark-green, 15%);
 $link-color: $dark-green;
+$link-hover-color: $primary-color;
 
 @import 'basscss';
 
@@ -51,8 +52,12 @@ $link-color: $dark-green;
 .site-header {
     background: $primary-color;
 
-    p, site-title, a, a:visited {
-        color: white;
+    p, site-title, a, a:visited, a:hover, a:focus {
+        color: white !important;
+    }
+
+    a:hover, a:active, a:focus {
+        border-bottom-color: white !important;
     }
 
     .site-nav {
