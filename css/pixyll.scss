@@ -75,3 +75,11 @@ $link-hover-color: $primary-color;
     }
 }
 
+.tech-list {
+    dd,dt {
+        display: inline-block;
+    }
+    dd {
+        margin: 0 0 0 1rem;
+    }
+}
