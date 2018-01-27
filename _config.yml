@@ -1,6 +1,6 @@
 # Site settings
 title:       Federico Cingolani
-#email:       mail@fcingolani.com.ar
+email:       mail@fcingolani.com.ar
 author:      Federico Cingolani
 description: "I'm a web developer from Buenos Aires, Argentina. I've been working in high-traffic digital platforms from the media industry for more than a decade."
 baseurl:     ""
@@ -16,7 +16,6 @@ animated:             true
 show_related_posts:   false
 show_post_footers:    true
 show_social_icons:    true
-ajaxify_contact_form: false
 
 # Disqus post comments
 # (leave blank to disable Disqus)

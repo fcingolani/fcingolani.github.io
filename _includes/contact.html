@@ -1,0 +1,56 @@
+
+
+  <p>You can contact me through <a href="https://twitter.com/fcingolani">Twitter</a> or via email at <em>mail [at] fcingolani.com.ar</em> using the following form:</p>
+
+  <form class="form-stacked">
+    <label>
+      <input type="text" name="email" class="field-light" placeholder="you@yourcompany.com">
+    </label>
+
+    <label>
+      <textarea type="text" name="content" class="field-light" rows="5" placeholder="Your message." style="resize: vertical"></textarea>
+    </label>
+
+    <input type="text" name="_gotcha" style="display:none" />
+
+    <button type='submit' class="button right button-big mobile-block">Send e-mail</button>
+  </form>
+
+  <div class="clearfix"></div>
+  <script>
+    var contactForm = document.querySelector('form'),
+      inputEmail = contactForm.querySelector('[name="email"]'),
+      textAreaMessage = contactForm.querySelector('[name="content"]'),
+      gotchaField = contactForm.querySelector('[name="_gotcha"]'),
+      subjectField = contactForm.querySelector('[name="_subject"]'),
+      sendButton = contactForm.querySelector('button');
+
+    sendButton.addEventListener('click', function (event) {
+      event.preventDefault();
+
+      sendButton.innerHTML = 'sending..';
+
+      var xhr = new XMLHttpRequest();
+      xhr.open('POST', 'https://formspree.io/{{ site.email }}', true);
+      xhr.setRequestHeader("Accept", "application/json")
+      xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded")
+
+      xhr.send(
+        "email=" + encodeURIComponent(inputEmail.value) +
+        "&message=" + encodeURIComponent(textAreaMessage.value) +
+        "&_subject=Submission from {{site.url}}" +
+        "&_format=plain" +
+        "&_gotcha=" + gotchaField.value);
+
+      xhr.onloadend = function (res) {
+        if (res.target.status === 200) {
+          sendButton.innerHTML = 'Message sent!';
+          textAreaMessage.value = '';
+          inputEmail.value = '';
+        }
+        else {
+          sendButton.innerHTML = 'Error!';
+        }
+      }
+    });
+  </script>

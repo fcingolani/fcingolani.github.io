@@ -12,6 +12,8 @@
 
 @import 'variables';
 
+$base-font-size: 18px;
+$primary-color: darken($dark-green, 15%);
 $link-color: $dark-green;
 
 @import 'basscss';
@@ -37,12 +39,17 @@ $link-color: $dark-green;
 @import 'measure';
 @import 'pagination';
 
+.button {
+    background: $primary-color;
+    color: white;
+}
+
 .ci {
     color: #333;
 }
 
 .site-header {
-    background: $dark-green;
+    background: $primary-color;
 
     p, site-title, a, a:visited {
         color: white;
