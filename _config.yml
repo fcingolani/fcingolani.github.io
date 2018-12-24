@@ -2,7 +2,7 @@
 title:       Federico Cingolani
 email:       mail@fcingolani.com.ar
 author:      Federico Cingolani
-description: "I'm a web developer from Buenos Aires, Argentina. I've been working in high-traffic digital platforms from the media industry for more than a decade."
+description: "Product guy / web developer. I've been building high-traffic digital platforms for the media industry for more than a decade."
 baseurl:     ""
 url:         "/"
 date_format: "%b %-d, %Y"
@@ -25,7 +25,7 @@ disqus_shortname:
 github_username:    fcingolani
 bitbucket_username:
 stackoverflow_id:
-twitter_username:
+twitter_username:   fcingolani
 google_plus_id:
 linkedin_username:  fcingolani
 angellist_username:
